@@ -15,6 +15,11 @@ class ContactType extends AbstractType
         $builder
             ->add('group', EntityType::class, array(
                 'class' => 'AppBundle\Entity\Group',
+                'attr' => array(
+                    'storage' => array(
+                        'route' => 'groups_list',
+                    )
+                )
             ))
             ->add('full_name', TextType::class)
             ->add('email', TextType::class)

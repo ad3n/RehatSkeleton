@@ -92,7 +92,7 @@ class GroupApiController extends RehatController
     /**
      * Get groups collection
      *
-     * @Route("")
+     * @Route("", name="groups_list")
      * @Method({"GET"})
      *
      * @ApiDoc(

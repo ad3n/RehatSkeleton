@@ -29,7 +29,9 @@ class ApiKeyAuthenticator extends AbstractGuardAuthenticator
      */
     public function getCredentials(Request $request)
     {
-        if (!$apiKey = $request->query->get('api') || !$secretKey = $request->query->get('secret')) {
+        $apiKey = $request->query->get('api');
+        $secretKey = $request->query->get('secret');
+        if (!$apiKey || !$secretKey) {
             return;
         }
 

@@ -46,7 +46,7 @@ class User implements UserInterface
      * @Filterable()
      * @Sortable()
      */
-    private $roles;
+    private $roles = array();
 
     /**
      * @ORM\Column(name="organization", type="string", length=77)
