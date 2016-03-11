@@ -2,7 +2,6 @@
 
 namespace AppBundle\Security;
 
-
 use Doctrine\ORM\EntityManager;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
