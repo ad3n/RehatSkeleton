@@ -3,9 +3,9 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Hateoas\Configuration as HateoasConfig;
 use Hateoas\Configuration\Annotation as Hateoas;
 use JMS\Serializer\Annotation as Serializer;
+use Symfonian\Indonesia\RehatBundle\Annotation\Filterable;
 use Symfonian\Indonesia\RehatBundle\Annotation\Searchable;
 use Symfonian\Indonesia\RehatBundle\Annotation\Sortable;
 use Symfonian\Indonesia\RehatBundle\Model\EntityInterface;
@@ -31,6 +31,7 @@ class Group implements EntityInterface
     /**
      * @ORM\Column(name="name", type="string", length=77)
      * @Searchable()
+     * @Filterable()
      * @Sortable()
      */
     private $name;

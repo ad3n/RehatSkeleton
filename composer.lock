@@ -779,12 +779,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "2321f6ce3456e02fece99ea4fa41c263bb598c46"
+                "reference": "6fb5d3bfe995d29f08fd36e7d7f351e52e23f7df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/2321f6ce3456e02fece99ea4fa41c263bb598c46",
-                "reference": "2321f6ce3456e02fece99ea4fa41c263bb598c46",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/6fb5d3bfe995d29f08fd36e7d7f351e52e23f7df",
+                "reference": "6fb5d3bfe995d29f08fd36e7d7f351e52e23f7df",
                 "shasum": ""
             },
             "require": {
@@ -859,7 +859,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2016-03-09 13:31:24"
+            "time": "2016-03-10 13:54:59"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2456,12 +2456,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/RehatBundle.git",
-                "reference": "83c71f3312665546633c8aade4b8cef040cee59a"
+                "reference": "5005865483b3b5787be44f5b4d707195c9c4762a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/RehatBundle/zipball/83c71f3312665546633c8aade4b8cef040cee59a",
-                "reference": "83c71f3312665546633c8aade4b8cef040cee59a",
+                "url": "https://api.github.com/repos/SymfonyId/RehatBundle/zipball/5005865483b3b5787be44f5b4d707195c9c4762a",
+                "reference": "5005865483b3b5787be44f5b4d707195c9c4762a",
                 "shasum": ""
             },
             "require": {
@@ -2517,7 +2517,7 @@
                 "symfony admin",
                 "symfony3"
             ],
-            "time": "2016-03-10 03:26:35"
+            "time": "2016-03-10 12:18:14"
         },
         {
             "name": "twig/twig",

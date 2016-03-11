@@ -1,0 +1,5 @@
+services:
+    app.api_key_authenticator:
+        class: AppBundle\Security\ApiKeyAuthenticator
+        arguments:
+            - '@doctrine.orm.entity_manager'

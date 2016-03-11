@@ -5,6 +5,7 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Hateoas\Configuration\Annotation as Hateoas;
 use JMS\Serializer\Annotation as Serializer;
+use Symfonian\Indonesia\RehatBundle\Annotation\Filterable;
 use Symfonian\Indonesia\RehatBundle\Annotation\Searchable;
 use Symfonian\Indonesia\RehatBundle\Annotation\Sortable;
 use Symfonian\Indonesia\RehatBundle\Model\EntityInterface;
@@ -33,6 +34,7 @@ class Contact implements EntityInterface
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Group", cascade={"persist"})
      * @ORM\JoinColumn(name="group_id", referencedColumnName="id")
      * @Searchable()
+     * @Filterable()
      * @Sortable()
      */
     private $group;
@@ -40,6 +42,7 @@ class Contact implements EntityInterface
     /**
      * @ORM\Column(name="name", type="string", length=77)
      * @Searchable()
+     * @Filterable()
      * @Sortable()
      */
     private $fullName;
