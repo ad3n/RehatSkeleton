@@ -4,7 +4,6 @@ namespace AppBundle\Form;
 
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -16,18 +15,10 @@ class ContactType extends AbstractType
         $builder
             ->add('group', EntityType::class, array(
                 'class' => 'AppBundle\Entity\Group',
-                'choice_label' => 'name',
-                'label' => 'Group',
             ))
-            ->add('full_name', TextType::class, array(
-                'label' => 'Nama Lengkap',
-            ))
-            ->add('email', TextType::class, array(
-                'label' => 'Email',
-            ))
-            ->add('phone_number', TextType::class, array(
-                'label' => 'Phone Number',
-            ))
+            ->add('full_name', TextType::class)
+            ->add('email', TextType::class)
+            ->add('phone_number', TextType::class)
         ;
     }
 
