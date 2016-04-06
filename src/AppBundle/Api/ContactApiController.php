@@ -86,7 +86,7 @@ class ContactApiController extends RehatController
      */
     public function putAction(Request $request, $id)
     {
-        return $this->put($request, $this->getForm(ContactType::class), $id, Contact::class);
+        return $this->put($request, $this->getForm(ContactType::class, 'PUT'), $id, Contact::class);
     }
 
     /**

@@ -86,7 +86,7 @@ class GroupApiController extends RehatController
      */
     public function putAction(Request $request, $id)
     {
-        return $this->put($request, $this->getForm(GroupType::class), $id, Group::class);
+        return $this->put($request, $this->getForm(GroupType::class, 'PUT'), $id, Group::class);
     }
 
     /**
